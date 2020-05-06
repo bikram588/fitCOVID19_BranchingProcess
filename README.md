@@ -16,7 +16,7 @@ Fitted models for Germany, France, Italy, Sweden, Ukraine, Indonesia and Bulgari
 
 These scenarios produce projections about what will happen if the assumptions on R0 and Immigration are correct. To produce a forecast, you need to forecast the R0 and Immigration. 
 
-The scripts download the latest data AUTOMATICALLY FROM WORLDOMETERS.COM when they run!  You may use data also from https://opendata.ecdc.europa.eu/covid19/casedistribution/csv but you need to download it manually and it seems they are more noisy/incorrect.
+The scripts download the latest data AUTOMATICALLY from https://www.worldometers.info/coronavirus/ when they run!  You may use data also from https://opendata.ecdc.europa.eu/covid19/casedistribution/csv but you need to download it manually and it seems they are more noisy/incorrect.
 
 To run the example model for a country, go to the corresponding directory for that country and run the script. The figures are then saved in ./Figures/ .
 
