@@ -76,7 +76,7 @@ UB=[10*ones(size(R0_daily_start,2),1); Im_mu_max*ones(size(R0_daily_start,2),1)]
 % smoothing parameters:
 lmb_newcases = 1;     % penalty for non-smoothness in the projected new cases from the model
 lmb_R0 = 0.5;          % penalty for non-smoothness in R0(t), t=0, ..., T
-lmb_Im = 0.4;          % penalty for non-smoothness in the immigration probabilities, t=0, ..., T
+lmb_Im = 0.2;          % penalty for non-smoothness in the immigration probabilities, t=0, ..., T
 
 optim_param = createOptimProblem('fmincon', 'objective', @(X)(obj_Mu_and_Im(X, Z_0, mu_covid_pdf, Im_age_struct_prob, h, totalcases_hist, [lmb_newcases lmb_R0 lmb_Im])), 'x0', [R0_daily_start, Im_mu_daily_start], 'lb', LB, 'ub', UB, 'options', optim_options);
 [X_solution, ~, exitflag]=fmincon(optim_param);
@@ -289,4 +289,3 @@ end
 
 %% save the results
 % save(strcat('results_', num2str(sim_num)))
-
