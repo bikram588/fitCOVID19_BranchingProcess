@@ -1,6 +1,6 @@
 # fitCOVID19_BranchingProcess
 The project contains Matlab script files for fitting the parameters of the Branching Process Simulator, available at https://github.com/plamentrayanov/BranchingProcessSimulator .
-The project is oriented specifically towards modelling the COVID19 (SARS-CoV-2) epidemics. Some of the required parameters in the simulator are virus-specific, defined as hard-coded values from articles on the subject and observed data. Others are country-specific, for which an optimization procedure is implemented. The procedure aims at estimating the point process mass of the BP (i.e. R0(t), a.k.a R(t)) and the Immigration expectation as a smooth function over time. The procedure required subjectively chosen smoothing parameters that restrict the curvature of R0(t) and Im(t).
+The project is oriented specifically towards modelling the COVID19 (SARS-CoV-2) epidemics. Some of the required parameters in the simulator are virus-specific, defined as hard-coded values from articles on the subject and observed data. Others are country-specific, for which an optimization procedure is implemented. The procedure aims at estimating the point process mass of the BP (i.e. R0(t), a.k.a R(t)) and the Immigration expectation as a smooth function over time. The procedure requires subjectively chosen smoothing parameters that restrict the curvature of R0(t) and Im(t).
 
 The project aims to:
 1. Provide an epidemics projection based on the stochastic theory of Branching Processes, as an alternative to the classical SIR, SEIR and other deterministic models.
