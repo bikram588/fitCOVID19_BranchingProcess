@@ -8,13 +8,15 @@ The project aims to:
 3. Demonstrate the uses of Branching Processes to model epidemics.
 
 
-# Included in the package
+# Countries examples and assumptions
 Fitted models for Germany, France, Italy, Sweden, Ukraine, Indonesia and Bulgaria are included. The code uses parallel computing and the more CPU cores you have, the more RAM you need. Make sure you have enough RAM to run the simulations on all cores! There are 3 scenarios for the future epidemics development for each country:
 1. No change in R0 and Immigration. The value of R0 and Immigration from the last days is taken as a constant for the future development.
 2. Decrease in R0 and Immigration, which is more optimistic scenario from what we are currently experiencing.
 3. Increase in R0 and no change in Immigration, which is more pessimistic scenario from what we are currently experiencing.
 
 These scenarios produce projections about what will happen if the assumptions on R0 and Immigration are correct. To produce a forecast, you need to forecast the R0 and Immigration. 
+
+IMPORTANT NOTE: The produced confidence intervals are conditional on the R0 and Immigration scenario and might be inaccurate as R0 and Immigration changes over time. They are also conditional on the BP total progeny expectation being equal to the observed total cases. However, they are not conditional on the current number of active cases. More work is required to produce better confidence intervals that include all sources of risk to the forecast!
 
 The scripts download the latest data automatically from https://www.worldometers.info/coronavirus/ !  You may also use data from https://opendata.ecdc.europa.eu/covid19/casedistribution/csv but you will have to manually download it and the data is more noisy/incorrect.
 
